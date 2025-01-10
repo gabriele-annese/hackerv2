@@ -11,7 +11,7 @@ To use the Hackerv2 theme:
 1. Add the following to your site's `_config.yml`:
 
     ```yml
-    remote_theme: 0xresetti/hackerv2@master
+    remote_theme: gabriele-annese/hackerv2@master
     plugins:
     - jekyll-remote-theme # add this line to the plugins list if you already have one
     ```
