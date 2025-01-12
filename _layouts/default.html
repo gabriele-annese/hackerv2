@@ -6,7 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
-
+    <style>
+    /* CSS per lo stile del prompt */
+    .prompt {
+      font-family: monospace;
+      white-space: nowrap; /* Impedisce l'andamento a capo */
+    }
+    /* Stile per il contenitore dell'effetto */
+    #container {
+      padding: 20px;
+      font-size: 18px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    </style>
+    <script src="./script/personal-script/decrypt.js" defer></script>
   </head>
 
   <body>
@@ -18,7 +33,7 @@
               text-decoration: none;
             }
           </style>
-          <span class="prompt"><a href="https://gabriele-annese.github.io/MalwareOpsBlog/">root@malware-ops:~$</a></span>
+          <span class="prompt" id="prompt">root@malware-ops:~$</span>
         </div>
       </header>
       <section id="main_content">
